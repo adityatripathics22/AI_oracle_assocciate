@@ -1,0 +1,107 @@
+-> AI vs ML vs DL----------------------------------
+Hi, and welcome to this module on AI versus ML versus DL. Let's understand the difference between Artificial Intelligence, Machine Learning, and Deep Learning with some simple examples.
+
+-> Artificial Intelligence (AI)
+AI refers to the broader concept of creating machines or systems that can perform tasks that typically require human intelligence.
+
+--> Example:
+A self-driving car that can make decisions like a human driver, such as navigating traffic, detecting pedestrians, and making safe lane changes.
+
+A voice assistant (e.g., Alexa, Siri) that understands and responds to natural language commands.
+
+-> Machine Learning (ML)
+ML is a subset of AI that focuses on the development of algorithms that enable machines to learn from and make predictions or decisions based on data.
+
+--> Example:
+A spam email filter that learns to identify spam based on previous email interactions and content.
+
+Netflix’s recommendation system that suggests movies based on your watch history.
+
+--> Algorithm in ML:
+An algorithm in ML is a specific set of rules, mathematical equations, or procedures that a model follows to learn from data and make predictions.
+
+-> Deep Learning (DL)
+DL is a subfield of ML that uses neural networks with many layers (deep neural networks) to learn and make sense of complex patterns in data.
+
+--> Example:
+Image recognition software that can detect objects or animals in pictures, such as recognizing cats in internet photos.
+
+Voice-to-text systems like Google Speech Recognition.
+
+-> Types of Machine Learning--------------------------------
+
+--> Supervised Learning
+
+Algorithm learns from labeled data (input with correct answers).
+
+Example: Credit card approval prediction based on historical approval/rejection data.
+
+--> Unsupervised Learning
+
+Algorithm finds patterns in unlabeled data.
+
+Example: Grouping customers into clusters based on spending habits for targeted marketing.
+
+--> Reinforcement Learning
+
+Algorithm learns by trial and error, receiving rewards or penalties for actions.
+
+Example: Teaching a robot to walk by rewarding it for forward movement and penalizing falls.
+
+
+-> Supervised Learning in Action: Credit Card Approval Example
+
+Past data = historical approvals and rejections.
+Algorithm trains on this labeled data.
+Model predicts whether a new application should be approved.
+
+--> Manual/Rules Engine Drawbacks:
+
+Slow
+Requires skilled people to update rules
+Rules change often
+
+--> Supervised ML Advantages:
+
+Learns from historical patterns without manual rule creation.
+
+-> Unsupervised Learning in Action: Retail Clustering Example
+
+Data: Household size, income, location, occupation.
+Algorithm clusters customers into groups (e.g., small family, high spenders).
+Used for targeted marketing and promotions.
+
+--> Additional Example: Nutritional Similarity
+
+Cluster fruits and vegetables based on nutritional values.
+
+Helps create balanced diet plans by including diverse nutrients.
+
+-> Reinforcement Learning in Action: Game Playing Example
+
+Player (agent) makes a move → checks feedback → stores outcome in memory → uses knowledge for next move.
+
+Example: Chess AI learning optimal moves by playing millions of games against itself.
+
+Real-world use: Autonomous driving systems making decisions in traffic based on trial-and-error simulations.
+
+-> Deep Learning for Image Recognition Example
+
+Can’t classify cats vs dogs by a single pixel — needs multiple features.
+Deep neural networks automatically extract features from raw pixel data.
+
+Example: Facebook’s automatic photo tagging based on facial recognition.
+
+-> Neural Networks
+
+Layers of neurons (artificial brain cells) connected together.
+Often used in supervised ML for tasks like function approximation — estimating unknown relationships from known data.
+
+-> Generative AI
+A subset of ML that creates new content (text, audio, images, etc.) based on learned patterns.
+
+--> Examples:
+
+ChatGPT generating text responses.
+DALL·E creating images from text prompts.
+Music composition AI producing original tunes.

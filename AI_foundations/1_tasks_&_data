@@ -1,0 +1,54 @@
+-> 1. Language AI
+
+--> Text-based tasks use text as input; outputs vary.
+---> Examples: detecting language in a sentence, extracting names and dates, translating “Hello” from English to Spanish.
+--> Generative tasks create new text.
+---> Examples: writing a short story, composing a poem, summarizing a news article, answering a question via ChatGPT.
+--> Text is sequential and converted to numbers through tokenization; lengths are standardized using padding.
+--> Embeddings represent words/sentences in a way that captures meaning and similarity.
+--> Common architectures:
+---> RNN – processes data in sequence (e.g., simple text classification).
+---> LSTM – remembers long-term context with gates (e.g., chatbot conversation memory).
+---> Transformers – process in parallel using self-attention (e.g., Google Translate, GPT models).
+
+-> 2. Speech & Audio AI
+
+--> Audio-based tasks: convert or analyze audio.
+---> Examples: speech-to-text transcription (YouTube auto-captions), speaker recognition for security systems, voice conversion in dubbing.
+--> Generative tasks: create audio.
+---> Examples: AI-composed music, text-to-speech voices like Alexa or Siri.
+--> Audio is recorded as many samples per second (sampling rate, e.g., 44.1 kHz for CDs).
+--> Bit depth determines how much information each sample holds.
+--> Multiple samples are needed to understand meaning (e.g., recognizing a song from several seconds of audio).
+--> Common architectures:
+---> RNN, LSTM, Transformers – used in speech recognition systems.
+---> VAEs – generate/transform audio (e.g., changing voice tone).
+---> Waveform models – process raw audio signals (e.g., WaveNet for speech synthesis).
+---> Siamese networks – compare and verify audio (e.g., confirming if two voice recordings are from the same person).
+
+-> 3. Vision AI
+
+--> Image-based tasks: analyze or classify images.
+---> Examples: identifying if a photo contains a cat, detecting pedestrians in self-driving cars, facial recognition at airport security.
+--> Generative tasks: create new images.
+---> Examples: generating art from text descriptions (DALL·E), creating realistic 3D models for gaming, increasing image resolution.
+--> Images are made of pixels (grayscale or color); meaning comes from patterns of pixels, not single points.
+--> Common architectures:
+---> CNN – detects patterns in images (e.g., medical scan analysis).
+---> YOLO – real-time object detection (e.g., traffic sign recognition).
+---> GANs – generate realistic images (e.g., deepfake videos, synthetic fashion models).
+
+-> 4. Other AI Applications
+
+--> Anomaly detection: finds unusual patterns.
+---> Examples: detecting credit card fraud, spotting machine malfunctions in factories.
+--> Recommendations: suggest relevant items.
+---> Examples: Netflix movie suggestions, Amazon product recommendations.
+--> Forecasting: predict future outcomes using past data.
+---> Examples: weather predictions, stock price forecasting, energy demand estimation.
+
+
+
+
+
+

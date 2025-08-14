@@ -1,0 +1,58 @@
+-> 1. OCI Vision AI Service
+--> Key capabilities
+---> Image Classification – Identify objects or scenes in an image.
+  Example: Detecting “vegetation” with a 99.23% confidence score.
+---> Object Detection – Identify and locate multiple objects with bounding boxes.
+  Example: Detecting cars, taxis, and pedestrians in traffic images.
+---> Text Detection – Extract printed or handwritten text from images.
+  Example: Detecting bus number plate “M32HOD” and other text on the bus.
+---> Document AI – Analyze and extract structured information from documents.
+  Example: Reading receipts, extracting transaction date/time, totals, and table data.
+
+--> Image Classification Demonstrations
+---> Single zebra detected along with labels like “vegetation,” “grassland,” and “animal.”
+---> Two zebras detected, labeled as “animal,” “vegetation,” “sky,” and “mammal.”
+
+--> Object Detection Demonstrations
+---> Traffic scene: cars, taxi, and people detected with bounding boxes and confidence scores.
+---> Basket of fruit: orange, banana, apple, and even the bowl detected.
+
+--> Text Detection Demonstrations
+---> Bus with text: number plate, route number, and smaller text blocks extracted.
+---> Different fonts: service accurately extracts text in varied fonts (e.g., Arial, Arial Black).
+
+--> Document AI Demonstrations
+---> Receipt: raw text extracted from “Receipt” to “Thank You.”
+---> Key-value pairs identified: transaction date/time, subtotal, tax, total.
+---> Tables extracted:
+  1. Itemized purchase list.
+  2. Total cost table.
+  3. Card authorization details.
+
+-> 2. OCI AI Language Service
+--> Main capabilities
+---> Text Analysis – Apply pretrained models for insights from text.
+---> Text Translation – Translate text into multiple target languages.
+
+--> Text Analysis Features
+---> Language detection.
+  Example: Detecting English as the language.
+---> Text classification.
+  Example: Classifying a paragraph as “Science & Technology.”
+---> Entity extraction.
+  Example: Detecting “food,” “computers,” and tagging them as products/events.
+---> Key phrase extraction.
+  Example: Extracting “early computers” and “simple manual instruments.”
+---> Sentiment analysis.
+  Example: Determining positive or negative sentiment for aspects like “food” or “service.”
+---> Sentence-level sentiment detection.
+  Example: Marking sentences as negative or neutral.
+---> Personal identifiable information detection.
+  Example: Highlighting sensitive data such as dates from World War II.
+
+--> Text Translation Demonstrations
+---> Translating English text to French in seconds.
+---> Translating English text to Japanese with similar speed.
+
+--> Custom Model Training
+---> Users can upload custom data to train models tailored to their needs.
