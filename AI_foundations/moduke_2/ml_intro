@@ -1,0 +1,43 @@
+What is Machine Learning?
+
+Machine Learning (ML) is a subset of Artificial Intelligence (AI) that focuses on creating computer systems that can learn and make predictions from examples without being explicitly programmed.
+It uses algorithms that learn automatically from data --> enabling machines to improve performance over time.
+
+Everyday Examples of ML
+
+✅ Product recommendations --> Amazon suggests items based on your shopping history
+✅ Movie recommendations --> Netflix suggests movies/shows based on viewing patterns
+✅ Spam detection --> Email service flags spam using content classification
+✅ Self-driving cars --> ML helps navigate and reach destinations
+
+How Does ML Work?
+
+✅ Input Data (Features) --> Descriptive attributes (e.g., color, texture, eye color for cats/dogs)
+✅ Labels (Output) --> Desired result for each data point (e.g., “Cat” or “Dog”)
+✅ Training Data --> Dataset with both features and labels
+✅ Model Training --> The ML model learns the relationship between features and labels
+✅ Trained Model --> The learned system ready to make predictions
+✅ Inference --> Using the trained model to predict outcomes for new data
+
+Types of Machine Learning
+
+✅ Supervised Learning
+--> Uses: Labeled data (features + labels)
+--> Goal: Learn mapping from inputs to outputs
+--> Examples: Disease detection, weather forecasting, stock price prediction, spam detection, credit scoring
+
+✅ Unsupervised Learning
+--> Uses: Unlabeled data
+--> Goal: Find hidden patterns or groupings in data
+--> Examples: Fraud detection, customer segmentation, outlier detection, targeted marketing
+
+✅ Reinforcement Learning
+--> Uses: Feedback (rewards/penalties) to improve decisions
+--> Goal: Learn strategies that maximize rewards
+--> Examples: Automated robots, autonomous driving cars, game-playing AI
+
+Summary
+
+✅ Supervised Learning --> Learn from labeled examples
+✅ Unsupervised Learning --> Discover hidden structures without labels
+✅ Reinforcement Learning --> Learn by trial, error, and feedback to maximize long-term rewards
