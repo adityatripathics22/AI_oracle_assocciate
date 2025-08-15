@@ -1,0 +1,79 @@
+Unsupervised Machine Learning
+Introduction
+
+✅ Definition -->
+--> Unsupervised machine learning is a type of machine learning where there are no labeled outputs.
+--> The algorithm learns patterns and relationships in the data and groups similar data items.
+
+✅ Key Idea -->
+--> The patterns are explored explicitly without being told what to look for.
+
+Examples
+
+✅ Example 1: LEGO pieces -->
+--> Give a child a set of LEGO pieces and ask them to group them.
+--> The child may group based on color, size, or type.
+
+✅ Example 2: Fruits -->
+--> Basket of apples, bananas, and oranges.
+--> Group based on similarities like round/red fruits vs elongated/yellow fruits.
+--> This is an unsupervised learning task.
+
+Clustering
+
+✅ Definition -->
+--> Clustering groups data items based on similarity.
+--> Items in the same cluster are more similar than items in other clusters.
+--> Items that do not fit any cluster are called outliers.
+
+✅ Example -->
+--> Grapes could be an outlier compared to apples, pears, and strawberries.
+
+Use Cases of Unsupervised Learning
+
+✅ Market Segmentation -->
+--> Example: Use online shop purchase data to cluster customers.
+--> Similar buying behaviors can help target ads (e.g., sports products for protein buyers).
+
+✅ Outlier Analysis -->
+--> Example: Credit card transactions.
+--> Fraudulent transactions are identified as outliers (e.g., very high or recurring amounts).
+
+✅ Recommendation Systems -->
+--> Example: Movie or music viewing history.
+--> Cluster users based on preferences to provide personalized recommendations (e.g., Netflix).
+
+Key Concept: Similarity
+
+✅ Definition -->
+--> Similarity measures how close two data points are, value between 0 and 1.
+--> Closer to 1 --> more similar objects.
+
+✅ Example -->
+--> Apple and cherry may have high similarity based on color.
+
+✅ Common Similarity Metrics -->
+--> Euclidean distance
+--> Manhattan distance
+--> Cosine similarity
+--> Jaccard similarity
+
+Workflow of Unsupervised Learning
+
+✅ Step 1: Prepare the Data -->
+--> Remove missing values
+--> Normalize data
+--> Feature scaling
+
+✅ Step 2: Create Similarity Matrix -->
+--> Choose appropriate similarity metric based on data and algorithm
+
+✅ Step 3: Run Clustering Algorithm -->
+--> Partition-based clustering
+--> Hierarchical-based clustering
+--> Density-based clustering
+--> Distribution-based clustering
+
+✅ Step 4: Interpret and Adjust Clusters -->
+--> Check clustering quality iteratively
+--> Verify results against expectations at cluster and example levels
