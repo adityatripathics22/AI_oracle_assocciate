@@ -1,0 +1,91 @@
+Supervised Learning
+
+✅ Supervised Learning --> Learns from labeled data to map inputs to outputs
+✅ Concept --> The model is trained on past data and learns the relationship (mapping) between input and output
+✅ Analogy --> Like a teacher teaching a student using examples
+
+Output Types
+
+✅ Continuous output --> Use Regression
+✅ Categorical output --> Use Classification
+
+1. Linear Regression (Regression)
+Typical Applications
+
+✅ House price prediction --> Input: house size → Output: price
+✅ Stock price prediction --> Input: opening price, closing price, volume → Output: predicted price
+
+Example – House Price Prediction
+
+✅ Independent feature (input) --> House size (sq. ft.)
+✅ Dependent feature (output) --> Price (in dollars)
+✅ Training example / tuple --> One row of input and output
+✅ Training dataset --> All examples used to build the model
+
+✅ Visualization --> Scatter plot shows that as house size increases → price increases
+✅ Fitting a line --> Draw a straight line that best passes through the data points to predict prices
+✅ Prediction example --> For size = 1,100 sq. ft., use the line to find the price
+
+Linear Regression Model
+
+✅ Equation --> f(X) = w × X + b
+--> w = slope (rate of change of price with respect to size)
+--> b = bias (y-intercept)
+
+✅ Slope adjustment --> Tilts the line up or down
+✅ Bias adjustment --> Moves the line up or down
+
+Training Process
+
+✅ Algorithm changes w and b iteratively to minimize error
+✅ Error --> Difference between predicted value and actual value
+✅ Loss --> Penalty for incorrect predictions (0 if perfect, higher if bad prediction)
+✅ Squared loss --> (Predicted – Actual)²
+✅ Model updates w and b to minimize loss until the best-fitting line is found
+
+2. Classification (Categorical Output)
+What is Classification?
+
+✅ Definition --> Assign a category or label to the outcome
+✅ Binary classification --> Two possible categories (e.g., email spam/not spam)
+✅ Multi-class classification --> More than two categories (e.g., sentiment prediction: positive, negative, neutral)
+✅ Classifier --> Trained on labeled dataset to categorize data points based on features
+
+Examples
+
+✅ Spam detection --> Classifier predicts if an email is spam or not (binary)
+✅ Sentiment prediction --> Classifier identifies positive, negative, neutral sentiments (multi-class)
+
+Logistic Regression for Classification
+
+✅ Purpose --> Predicts if something is true or false (binary outcomes)
+✅ Example --> Pass/Fail prediction based on hours studied
+✅ Input feature --> Hours of study (independent variable)
+✅ Output --> Pass or Fail (binary)
+
+✅ Difference from Linear Regression -->
+--> Linear regression fits a straight line
+--> Logistic regression fits an S-shaped curve (sigmoid function)
+
+✅ Sigmoid function -->
+--> Maps any real number into a range between 0 and 1
+--> Interpreted as a probability
+
+✅ Decision rule -->
+--> If probability > 0.5 --> Classify as Pass
+--> If probability ≤ 0.5 --> Classify as Fail
+
+✅ Example probabilities -->
+--> 6 hours study → 80% probability → Pass
+--> 4 hours study → 20% probability → Fail
+
+Multi-Class Example – Iris Dataset
+
+✅ Dataset --> 150 instances of 3 iris flower species:
+--> Iris-setosa
+--> Iris-versicolor
+--> Iris-virginica
+
+✅ Features --> Sepal length, Sepal width, Petal length, Petal width
+✅ Output label --> 3 classes representing flower types
+✅ Type --> Multi-class classification using logistic regression
