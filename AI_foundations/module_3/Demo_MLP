@@ -1,0 +1,90 @@
+✅ Step 1: Data Generation
+--> We generate concentric circles dataset using make_circles.
+--> Parameters we can change:
+
+n_samples (e.g., 300) → number of data points
+
+noise (e.g., 0.1, 0.3, 0.5) → randomness in data points
+
+factor (e.g., 0.7) → distance between inner and outer circle
+
+👉 Example:
+
+With higher noise, circles look fuzzier and harder to separate.
+
+With factor = 0.7, circles move closer together.
+
+✅ Step 2: Understanding the MLP Classifier
+--> MLP (Multilayer Perceptron) has:
+
+Input layer (x, y coordinates of points)
+
+Hidden layer(s) → multiple neurons → nonlinear decision boundary
+
+Output layer (predicts label 0 or 1)
+
+--> We use:
+
+hidden_layer_sizes=(n,) → n neurons in one hidden layer
+
+activation="relu" → helps create nonlinear boundaries
+
+max_iter → maximum training iterations
+
+random_state → fixes randomness for reproducibility
+
+✅ Step 3: Effect of Neurons on Decision Boundary
+👉 Starting small → increasing complexity:
+
+1 neuron → all points predicted as one class → poor performance
+
+2 neurons → boundary appears, but still many misclassifications
+
+3 neurons → more curved boundary, more accurate
+
+4 neurons → even better classification
+
+5–6 neurons → decision boundary becomes more complex and accurate
+
+Analogy →
+Think of neurons as artists drawing boundaries:
+
+With 1 artist → just a straight line
+
+With more artists → more curves, twists, and flexibility → better fit
+
+✅ Step 4: Interactive Slider (Visualization)
+--> We create a slider widget for hidden layer size.
+--> Every time slider moves → classifier retrains with new neuron count → updated plot shown.
+
+✅ Step 5: How the update_plot Function Works
+
+Generate training dataset (X: coordinates, y: labels).
+
+Initialize MLPClassifier with chosen hidden layer size.
+
+Train classifier with (X, y).
+
+Create a grid of new data points (100×100 mesh) covering dataset range.
+
+Predict labels for these new points.
+
+Reshape predictions to 2D → for plotting decision boundaries.
+
+Plot results:
+
+Decision boundary → using plt.contourf
+
+Points → class 0 = red, class 1 = green
+
+Labels, title → added for clarity
+
+✅ Step 6: Final Visualization
+--> Contour plot shows how decision boundary adapts with neuron count
+--> Scatter plot overlays training data (red/green points)
+--> Interactive slider lets us explore model capacity in real time
+
+✅ Key Takeaways
+--> More neurons → more flexible boundary → better fit to data
+--> Too few neurons → underfitting (poor classification)
+--> Visualization helps us understand bias-variance tradeoff in neural networks
