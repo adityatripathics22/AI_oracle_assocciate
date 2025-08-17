@@ -1,0 +1,69 @@
+✅ Introduction to Sequence Models
+--> Sequence models are designed to process ordered data (sequences).
+--> Input is a sequence of data points/events.
+--> Goal: Find patterns and dependencies in the sequence → make predictions, classifications, or generate new sequences.
+
+Examples of sequence data applications:
+--> Natural Language Processing (NLP) → machine translation, sentiment analysis, text generation
+--> Speech Recognition → converting audio into text
+--> Music Generation → creating new melodies or compositions
+--> Gesture Recognition → interpreting sign language
+--> Time Series Forecasting → finance (stock prediction), weather prediction
+
+✅ Recurrent Neural Networks (RNNs)
+--> RNNs are designed specifically for sequential data.
+--> Unlike feedforward networks, RNNs have a feedback loop.
+--> They maintain an internal hidden state (memory) across time steps.
+--> Hidden state is updated at each step → captures dependencies across time.
+
+Example:
+Reading a sentence word by word → RNN remembers the context (previous words) to predict the next word.
+
+✅ RNN Architectures
+--> One-to-One → Single input → Single output (like normal feedforward NN, not suitable for sequences)
+--> One-to-Many → One input → Multiple outputs
+Example: Music generation (input = seed note → outputs = melody sequence)
+--> Many-to-One → Multiple inputs → One output
+Example: Sentiment analysis (input = review text → output = sentiment “positive/negative”)
+--> Many-to-Many → Multiple inputs → Multiple outputs
+Example: Machine translation (English sentence → French sentence), Named Entity Recognition
+
+✅ Challenges with RNNs
+--> RNNs struggle with long-term dependencies.
+--> Due to vanishing gradient problem, older information gets lost as sequences get longer.
+--> Solution → LSTM (Long Short-Term Memory) networks.
+
+✅ Long Short-Term Memory (LSTM)
+--> LSTMs are a type of RNN designed to remember information for longer sequences.
+--> Use special memory cells + gating mechanisms.
+--> Gating mechanism = filters that control what information to keep, forget, or output.
+
+✅ How LSTM Works (Step-by-Step)
+At each time step, LSTM takes:
+--> Input vector (current data point)
+--> Previous hidden state (short-term memory)
+--> Previous cell state (long-term memory)
+
+Three Gates in LSTM:
+--> Input Gate → Decides what new information from the input should be stored.
+--> Forget Gate → Decides what information from memory should be discarded.
+--> Output Gate → Decides what part of the memory should be output at the current step.
+
+Process:
+
+LSTM combines input + hidden state + gates.
+
+Updates cell state (long-term memory).
+
+Produces a new hidden state → output for current step & input for next step.
+
+Example:
+When reading the sentence “I grew up in France … I speak fluent ___”
+--> LSTM remembers “France” from earlier → predicts “French” correctly, even though many words have passed.
+
+✅ In Summary
+--> Sequence models are powerful for time-dependent / order-sensitive data.
+--> RNNs allow hidden state to carry information across time.
+--> Variants: one-to-one, one-to-many, many-to-one, many-to-many.
+--> Limitation: RNNs forget long-term context (vanishing gradients).
+--> LSTM solves this with memory cells + gates → effective for long sequences.
