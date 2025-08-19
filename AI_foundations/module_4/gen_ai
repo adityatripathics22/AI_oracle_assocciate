@@ -1,0 +1,37 @@
+✅ What is AI?
+--> AI: Machines imitating human intelligence.
+--> Machine Learning (ML): A subset of AI where algorithms learn from past data to make predictions or identify patterns.
+--> Deep Learning (DL): A further subset of ML using neural networks to handle complex data.
+
+✅ What is Generative AI?
+--> Definition: AI that creates new content (text, images, music, video, etc.).
+--> Key Idea: Learns patterns from existing data and generates new examples following those patterns.
+--> Difference from ML:
+
+ML → learns relationship between data and labels → output is classification/prediction.
+
+GenAI → learns patterns in unstructured data → output is new generated content.
+
+✅ Example of Generative AI
+--> Train model with dog pictures.
+--> Model learns features (ears, fur, whiskers).
+--> Generates a new dog image (not copied, but created).
+
+✅ How Training Differs (ML vs GenAI)
+--> ML (Supervised): Needs labeled data (picture + “dog”).
+--> GenAI: Pre-trained on large unlabeled data.
+--> GenAI can later be fine-tuned with labeled data for specific tasks.
+
+✅ Types of Generative AI Models
+--> Text-based models: Generate text, dialogues, articles, or code. Learn from large text collections.
+--> Multimodal models: Handle multiple data types (text, images, audio, video). Example: Generate image from a text prompt.
+
+✅ Applications of Generative AI
+--> Content creation (articles, designs, media).
+--> Image & video generation.
+--> Medicine & Drug Discovery: Faster diagnosis and drug development.
+--> Automation and creative assistance across industries.
+
+✅ Key Difference (One Line)
+--> ML = Predicts/labels.
+--> GenAI = Generates new data/content.
