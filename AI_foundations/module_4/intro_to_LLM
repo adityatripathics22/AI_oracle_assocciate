@@ -1,0 +1,46 @@
+✅ Introduction to Large Language Models (LLMs)
+--> A language model is a probabilistic model of text.
+--> It predicts the probability of a word occurring in a sequence based on the previous words.
+--> Helps in predicting the next most likely word.
+
+✅ Example of a Language Model
+--> Sentence: “I wrote to the zoo to send me a pet. They sent me ___.”
+--> Vocabulary: lion, elephant, dog, cat, panther, etc.
+--> Model assigns probabilities (e.g., lion = 0.03, elephant = 0.02, dog = 0.45).
+--> Picks the word with highest probability (“dog”).
+--> Appends the word and updates probabilities for the next word.
+--> May output EOS (End of Sentence) token to finish the sentence.
+
+✅ What Does “Large” in LLM Mean?
+--> Refers to the number of parameters (weights in the neural network).
+--> Parameters can scale from hundreds of millions to billions.
+--> No strict threshold between small and large.
+--> Model size = memory needed to store parameters & structures.
+--> More parameters ≠ always better → risk of overfitting.
+
+✅ What Can You Do with LLMs?
+--> Question Answering: “What is the capital of France?” → Paris.
+--> Reasoning & Puzzles: Can explain reasoning steps.
+--> Content Generation: Essays, articles, stories.
+--> Translation: E.g., “How are you” → Comment allez-vous? (French).
+--> Summarization & Sentiment Analysis: Understands and condenses text.
+
+✅ How Do LLMs Work?
+--> Based on transformer architecture.
+--> Transformers allow models to pay selective attention to input context.
+--> This gives enhanced contextual understanding.
+--> Trained on massive text datasets (internet-scale data).
+
+✅ Key Characteristics of LLMs
+--> Use deep neural networks.
+--> Predict the next word in a sequence using optimized parameters.
+--> Parameters are adjustable weights tuned during training.
+--> Growth trend: Models scaling up (hundreds of billions of parameters).
+--> Some models’ parameter counts are undisclosed (may exceed 540B).
+
+✅ Summary
+--> LLMs = probabilistic models predicting word sequences.
+--> Powered by transformer deep learning architecture.
+--> Used for Q&A, reasoning, text generation, translation, summarization.
+--> Parameters scale massively, but larger ≠ always better.
+--> Next lessons → deeper dive into transformer architecture.
